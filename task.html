@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content=
+        "width=device-width, initial-scale=1.0" />
+    <title>Parallax Scrolling Effect</title>
+
+    <style>
+        /* CSS for parallax effect */
+        .nav{
+            width: 100%;
+            height: 20vh;
+            top: 0;
+            position: fixed;
+            z-index: 1;
+           
+        }
+        .parallax1 {
+            background-image: url("img1.avif");
+            min-height: 700px;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding-top: 5%;
+        }
+        h2{
+            padding-top: 2%;
+            text-align: center;
+        }
+        .top{
+            display: flex;
+            font-weight: bolder;
+            justify-content: space-around;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        .container{
+            width: 80%;
+            height: 60vh;
+            margin-left: 15%;
+            margin-top: 5%;
+            background-color: white;
+            opacity: 0.9;
+            display: flex;
+            gap: 5%;
+            border-radius: 10px;
+        }
+        .i1{
+            width: 400px;
+            height: 350px;
+            padding-top: 10%;
+            padding-left: 5%;
+            border-radius: 15px;
+        }
+        .part2{
+            padding-top: 15%;
+            padding-left: 5%;
+        }
+
+        .parallax2 {
+            background-image: url("img4.avif");
+            min-height: 700px;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+       
+        .parallax3 {
+            background-image: url("img3.avif");
+            min-height: 700px;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        html{
+            scroll-behavior: smooth;
+        }
+      
+    </style>
+</head>
+
+<body>
+    <div class="parallax1" id="playfulpups"><div class="nav"><h2>Adorable Pictures</h2>
+    <div class="top"><div><a href="#playfulpups">Playful Pups</a></div>
+    <div><a href="#sleepypups">Sleepy Pups</a></div>
+    <div><a href="#curiouspups">Curious Pups</a></div></div></div>
+     <div class="container">
+        <div><img src="img1.avif" class="i1"></div>
+        <div class="part2"><h3>Playful Puppies</h3>
+        <p>Puppies love to play.Its how they learn about the world and develop important skills.</p></div>
+     </div>
+</div>
+
+   
+    <div class="parallax2" id="sleepypups"><br><br><br><br>
+        <div class="container">
+            <div class="part2"><h3>Sleepy Puppies</h3>
+                <p>Puppies need lots of sleep to grow big and strong.They can sleep upo 20 hours a day!</p></div>
+                <div><img src="img4.avif" class="i1"></div>
+         </div>
+    </div>
+    <div class="parallax3" id="curiouspups"><br><br><br><br>
+        <div class="container">
+            <div><img src="img3.avif" class="i1"></div>
+            <div class="part2"><h3>Curious Puppies</h3>
+            <p>Puppies are naturally curious and love to explore  their surroundings. This help them learn and grow.</p></div>
+         </div>
+    </div>
+</body>
+
+</html>
